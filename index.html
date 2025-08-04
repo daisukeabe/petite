@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プティスール - Petite soul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SVG Filters -->
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="fluffy-white" x="-50%" y="-50%" width="200%" height="200%">
+                <feTurbulence baseFrequency="0.9" numOctaves="4" result="turbulence"/>
+                <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="3"/>
+                <feGaussianBlur stdDeviation="2" result="blur"/>
+                <feFlood flood-color="white" flood-opacity="0.8" result="white"/>
+                <feComposite in="white" in2="blur" operator="in" result="fluffy"/>
+                <feMorphology operator="dilate" radius="1" in="fluffy" result="dilated"/>
+                <feComposite in="SourceGraphic" in2="dilated" operator="over"/>
+            </filter>
+        </defs>
+    </svg>
+    <!-- Header -->
+    <header class="header">
+        <!-- Background Images -->
+        <div class="header-bg-left">
+            <img src="img/left-head-bg.png" alt="" class="bg-left">
+        </div>
+        <div class="header-bg-right">
+            <img src="img/right-head-bg.png" alt="" class="bg-right">
+        </div>
+
+        <!-- Decorative Elements -->
+        <div class="decoration decoration-top-left"></div>
+        <div class="decoration decoration-top-right">
+            <img src="img/sns-x.svg" alt="X" class="sns-icon">
+            <img src="img/sns-insta.svg" alt="Instagram" class="sns-icon">
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <!-- Main Photo -->
+            <div class="main-photo-container">
+                <img src="img/main.png" alt="メンバー写真" class="main-photo">
+            </div>
+
+            <!-- Logo and Menu Container -->
+            <div class="logo-menu-container">
+                <div class="menu-item menu-outer">
+                    <img src="img/news-menu.svg" alt="おしらせ" class="menu-icon">
+                </div>
+                <div class="menu-item menu-center">
+                    <img src="img/cast-menu.svg" alt="きゃすと" class="menu-icon">
+                </div>
+
+                <!-- Main Logo (center) -->
+                <div class="main-logo-container">
+                    <img src="img/main-logo.png" alt="プティスール Petite soul" class="main-logo">
+                </div>
+
+                <div class="menu-item menu-center">
+                    <img src="img/price-menu.svg" alt="りょうきん" class="menu-icon">
+                </div>
+                <div class="menu-item menu-outer">
+                    <img src="img/access-menu.svg" alt="あくせす" class="menu-icon">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Message Section -->
+    <section class="message-section">
+        <img src="img/letter-pc.png" alt="おかえりなさい おにいちゃん" class="message-image">
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <img src="img/news-title.png" alt="おしらせ" class="section-title">
+        <div class="news-items">
+            <div class="news-item">
+                <img src="img/Google_AI_Studio_2025-07-28T03_14_11.849Z 1.jpg" alt="ニュース画像" class="news-image">
+                <div class="news-content">
+                    <p>ティナたなちゃんの誕生日会を今月30日に開催しますので、ぜひご参加ください♪</p>
+                    <span class="news-date">2025.12.02</span>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="img/Google_AI_Studio_2025-07-28T03_19_42.720Z 1.jpg" alt="ニュース画像" class="news-image">
+                <div class="news-content">
+                    <p>さくら(16)ちゃんが体験入店しました。やさしいおにいちゃんお待ちしております。</p>
+                    <span class="news-date">2025.12.12</span>
+                </div>
+            </div>
+        </div>
+        <button class="section-btn">
+            <img src="img/news-btn.svg" alt="おしらせ一覧">
+        </button>
+    </section>
+
+    <!-- Cast Section -->
+    <section class="cast-section">
+        <img src="img/cast-title.png" alt="きゃすと" class="section-title">
+        <div class="cast-grid">
+            <div class="cast-member">
+                <img src="img/image 1.jpg" alt="キャスト" class="cast-image">
+                <div class="name-tag">
+                    <img src="img/name-tag.png" alt="ティナたな" class="name-tag-bg">
+                    <span class="name-text">ティナたな</span>
+                </div>
+            </div>
+            <div class="cast-member">
+                <img src="img/image 1.jpg" alt="キャスト" class="cast-image">
+                <div class="name-tag">
+                    <img src="img/name-tag.png" alt="ティナたな" class="name-tag-bg">
+                    <span class="name-text">ティナたな</span>
+                </div>
+            </div>
+            <div class="cast-member">
+                <img src="img/image 1.jpg" alt="キャスト" class="cast-image">
+                <div class="name-tag">
+                    <img src="img/name-tag.png" alt="ティナたな" class="name-tag-bg">
+                    <span class="name-text">ティナたな</span>
+                </div>
+            </div>
+            <div class="cast-member">
+                <img src="img/image 1.jpg" alt="キャスト" class="cast-image">
+                <div class="name-tag">
+                    <img src="img/name-tag.png" alt="ティナたな" class="name-tag-bg">
+                    <span class="name-text">ティナたな</span>
+                </div>
+            </div>
+        </div>
+        <button class="section-btn">
+            <img src="img/cast-btn.svg" alt="きゃすと一覧">
+        </button>
+    </section>
+
+    <!-- System Section -->
+    <section class="system-section">
+        <img src="img/system-pc.png" alt="おたのしみ料金システム" class="system-image">
+        <button class="section-btn">
+            <img src="img/system-btn.png" alt="料金">
+        </button>
+    </section>
+
+    <!-- Access Section -->
+    <section class="access-section">
+        <img src="img/access-title.svg" alt="あくせす" class="section-title">
+        <div class="access-content">
+            <div class="access-info">
+                <h3>プティスール</h3>
+                <p>住所：東京都新宿区新宿4-◯◯◯◯◯◯◯◯ビル4F<br>
+                営業時間：18:00~5:00<br>
+                定休日：年中無休<br>
+                電話：(010)-0000-0000</p>
+                <div class="sns-links">
+                    <img src="img/sns-x.svg" alt="X">
+                    <img src="img/sns-insta.svg" alt="Instagram">
+                </div>
+            </div>
+            <div class="access-map">
+                <!-- Map placeholder -->
+                <div class="map-placeholder"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>サイトポリシー / お問い合わせ / 会社概要</p>
+        <p>2025 XXXXX Co., Ltd. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
