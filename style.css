@@ -7,15 +7,16 @@
 
 body {
     font-family: 'Zen Maru Gothic', 'Noto Sans JP', 'やさしさゴシック', 'Hiragino Sans', sans-serif;
-    background-color: #FFEEF6;
-    color: #333;
+    background-image: url('img/bg.jpg');
+    background-repeat: repeat;
+    background-size: 50%;
+    color: #79695B;
     line-height: 1.6;
 }
 
 /* Header */
 .header {
     position: relative;
-    background-color: #FFEEF6;
     padding: 40px 20px 0;
     text-align: center;
     overflow: hidden;
@@ -86,7 +87,7 @@ body {
 /* Hero Content */
 .hero-content {
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
     max-width: 1200px;
     width: 100%;
     margin-left: auto;
@@ -160,7 +161,7 @@ body {
 
 /* Message Section */
 .message-section {
-    padding: 60px 20px;
+    padding: 0px 20px 40px 20px;
     text-align: center;
 }
 
@@ -197,7 +198,7 @@ body {
 
 /* News Section */
 .news-section {
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -225,27 +226,27 @@ body {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-bottom: 15px;
 }
 
 .news-content p {
-    color: #333;
-    font-size: 14px;
+    color: #79695B;
+    font-size: 18px;
     margin-bottom: 10px;
     text-align: left;
 }
 
 .news-date {
     color: #FF69B4;
-    font-size: 12px;
+    font-size: 16px;
     text-align: right;
     display: block;
 }
 
 /* Cast Section */
 .cast-section {
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -277,7 +278,7 @@ body {
 
 .name-tag {
     position: absolute;
-    bottom: -50px;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -308,7 +309,7 @@ body {
 
 /* System Section */
 .system-section {
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -322,7 +323,7 @@ body {
 
 /* Access Section */
 .access-section {
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -356,8 +357,8 @@ body {
 }
 
 .access-info p {
-    color: #333;
-    font-size: 16px;
+    color: #79695B;
+    font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.8;
 }
@@ -382,29 +383,13 @@ body {
 .access-map {
     flex: 1;
     min-width: 300px;
-    min-height: 300px;
+    min-height: 450px;
+    margin-bottom: 20px;
 }
 
-.map-placeholder {
-    width: 100%;
-    height: 300px;
-    background: #f0f0f0;
-    border-radius: 20px;
-    border: 2px solid #FFB6C1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #999;
-    font-size: 18px;
-}
-
-.map-placeholder::before {
-    content: 'Map';
-}
 
 /* Footer */
 .footer {
-    background-color: #FFEEF6;
     color: #999;
     text-align: center;
     padding: 40px 20px;
