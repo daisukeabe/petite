@@ -26,10 +26,51 @@
             <img src="img/sns-x.svg" alt="X" class="sns-icon">
             <img src="img/sns-insta.svg" alt="Instagram" class="sns-icon">
         </div>
-        <a href="index.html">
-            <img src="img/main-logo.png" alt="プティスール Petite soul" class="main-logo" style="max-width: 300px; margin: 20px auto; display: block;">
-        </a>
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <!-- Logo and Menu Container -->
+            <div class="logo-menu-container">
+                <div class="menu-item menu-outer" onclick="location.href='news.html'">
+                    <img src="img/news-menu.svg" alt="おしらせ" class="menu-icon">
+                </div>
+                <div class="menu-item menu-center" onclick="location.href='cast.html'">
+                    <img src="img/cast-menu.svg" alt="きゃすと" class="menu-icon">
+                </div>
+
+                <!-- Main Logo (center) -->
+                <div class="main-logo-container">
+                    <a href="index.html">
+                        <img src="img/main-logo.png" alt="プティスール Petite soul" class="main-logo">
+                    </a>
+                </div>
+
+                <div class="menu-item menu-center" onclick="location.href='price.html'">
+                    <img src="img/price-menu.svg" alt="りょうきん" class="menu-icon">
+                </div>
+                <div class="menu-item menu-outer" onclick="location.href='access.html'">
+                    <img src="img/access-menu.svg" alt="あくせす" class="menu-icon">
+                </div>
+            </div>
+        </div>
     </header>
+
+    <!-- Mobile Menu (shown only on mobile) -->
+    <div class="mobile-menu-container">
+        <div class="mobile-menu-grid">
+            <div class="menu-item" onclick="location.href='news.html'">
+                <img src="img/news-menu.svg" alt="おしらせ" class="menu-icon">
+            </div>
+            <div class="menu-item" onclick="location.href='cast.html'">
+                <img src="img/cast-menu.svg" alt="きゃすと" class="menu-icon">
+            </div>
+            <div class="menu-item" onclick="location.href='price.html'">
+                <img src="img/price-menu.svg" alt="りょうきん" class="menu-icon">
+            </div>
+            <div class="menu-item" onclick="location.href='access.html'">
+                <img src="img/access-menu.svg" alt="あくせす" class="menu-icon">
+            </div>
+        </div>
+    </div>
 
     <!-- Cast List Section -->
     <section class="cast-section" style="padding-top: 40px;">
