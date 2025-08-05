@@ -986,6 +986,7 @@ a.news-item:hover {
     
     .name-tag {
         bottom: -10px;
+        width: 220px;
     }
     
     .news-section,
