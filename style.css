@@ -145,6 +145,24 @@ body {
     transform: scale(1.05);
 }
 
+.menu-item.active {
+    pointer-events: none;
+    cursor: default;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .menu-icon {
     width: 100%;
     max-width: 130px;
