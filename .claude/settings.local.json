@@ -12,7 +12,8 @@
       "Bash(done)",
       "Bash(for file in news.html cast.html price.html access.html company.html)",
       "Bash(do)",
-      "Bash(sed:*)"
+      "Bash(sed:*)",
+      "Bash(mv:*)"
     ],
     "deny": []
   }
