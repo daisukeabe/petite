@@ -188,7 +188,7 @@ body {
 
 .message-image {
     max-width: 100%;
-    width: 1100px;
+    width: 1000px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -426,6 +426,7 @@ a.news-item:hover {
     width: 270px;
     height: 270px;
     object-fit: cover;
+    object-position: center top;
     border-radius: 50%;
     border: 4px solid #FFB6C1;
     box-shadow: 0 5px 15px rgba(255, 182, 193, 0.3);
@@ -470,7 +471,7 @@ a.news-item:hover {
 
 .system-image {
     max-width: 100%;
-    width: 1200px;
+    width: 1100px;
     height: auto;
     margin: 0 auto 30px;
 }
@@ -487,6 +488,23 @@ a.news-item:hover {
 
 .access-info.price-info {
     padding: 40px 60px;
+}
+
+/* Access info layout for PC */
+.access-info-content {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.access-info-left {
+    flex: 1;
+}
+
+.access-info-right {
+    flex: 1;
 }
 
 .menu-list p {
@@ -580,6 +598,7 @@ a.news-item:hover {
     flex: 1;
     min-width: 300px;
     text-align: left;
+    overflow: hidden;
 }
 
 .access-info h3 {
@@ -602,6 +621,7 @@ a.news-item:hover {
     display: flex;
     gap: 30px;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .sns-links img {
@@ -620,6 +640,7 @@ a.news-item:hover {
     min-width: 300px;
     min-height: 450px;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 
@@ -642,6 +663,33 @@ a.news-item:hover {
 
 .footer p:last-child {
     margin-bottom: 0;
+}
+
+.footer a {
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+.footer a:hover {
+    text-decoration: underline !important;
+}
+
+.footer-sns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer-sns img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.footer-sns img:hover {
+    transform: scale(1.1);
 }
 
 /* Medium screens - 2 columns for news and cast */
@@ -855,11 +903,23 @@ a.news-item:hover {
     .access-info {
         width: 100%;
         max-width: 100%;
+        padding: 20px;
     }
     
     .access-info.price-info {
         padding: 40px 30px;
     }
+    
+    .access-info-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .access-info-left,
+    .access-info-right {
+        width: 100%;
+    }
+    
     
     .access-info h3 {
         font-size: 21px;
