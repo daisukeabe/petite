@@ -339,7 +339,7 @@ a.news-item:hover {
 }
 
 .news-date {
-    color: #FF69B4;
+    color: #FF6588;
     font-size: 15px;
     text-align: right;
     display: block;
@@ -396,7 +396,7 @@ a.news-item:hover {
 
 .cast-name-large {
     font-size: 32px;
-    color: #FF69B4;
+    color: #FF6588;
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -425,7 +425,7 @@ a.news-item:hover {
 
 .info-label {
     font-weight: bold;
-    color: #79695B;
+    color: #FFA6B3;
     font-size: 16px;
 }
 
@@ -439,7 +439,7 @@ a.news-item:hover {
 }
 
 .comment-box {
-    background: #FFB6C1;
+    background: #FFA6B3;
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
@@ -509,7 +509,7 @@ a.news-item:hover {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #FF69B4;
+    color: #FF6588;
     font-size: 18px;
     font-weight: bold;
     filter: url(#fluffy-white);
@@ -715,7 +715,7 @@ a.news-item:hover {
 }
 
 .access-info h3 {
-    color: #FF69B4;
+    color: #FF6588;
     font-size: 30px;
     margin-bottom: 20px;
     font-weight: bold;

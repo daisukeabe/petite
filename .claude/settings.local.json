@@ -13,7 +13,8 @@
       "Bash(for file in news.html cast.html price.html access.html company.html)",
       "Bash(do)",
       "Bash(sed:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Bash(grep:*)"
     ],
     "deny": []
   }
