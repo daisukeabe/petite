@@ -201,7 +201,7 @@ body {
 }
 
 .menu-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.11);
 }
 
 .menu-item.active {
@@ -846,6 +846,11 @@ a.news-item:hover {
         width: 100%;
     }
     
+    .main-logo-container a {
+        display: inline-block;
+        width: 200px;
+    }
+    
     .menu-icon {
         min-width: 40px;
         height: 40px;
@@ -866,7 +871,7 @@ a.news-item:hover {
         display: block;
         padding: 10px 5px;
         text-align: center;
-        margin-top: -30px;
+        margin-top: -25px;
     }
     
     .mobile-menu-grid {
