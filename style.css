@@ -772,7 +772,9 @@ a.cast-member:hover .cast-image {
     color: #79695B;
     font-weight: 700;
     font-size: 18px;
+    border-top: 2px dotted #cccccc;
     border-bottom: 2px dotted #cccccc;
+    padding-top: 2px;
     padding-bottom: 2px;
 }
 
