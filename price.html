@@ -212,7 +212,10 @@
             </div>
             
             <div style="text-align: center; margin-top: 30px;">
-                <img src="img/pisupisu.webp" alt="ぴすぴす" style="max-width: 100%; width: 600px; height: auto;">
+                <div style="position: relative; display: inline-block;" onmouseover="document.querySelector('.wait-icon').classList.add('show')" onmouseout="document.querySelector('.wait-icon').classList.remove('show')">
+                    <img src="img/pisupisu.webp" alt="ぴすぴす" style="max-width: 100%; width: 600px; height: auto;">
+                    <img src="img/wait.svg" alt="待ってるよ" class="wait-icon">
+                </div>
             </div>
         </div>
     </section>
