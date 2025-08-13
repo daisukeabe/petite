@@ -42,9 +42,12 @@ function handleMouseOut() {
     }
 }
 
-// クリック処理（3秒後に自動で閉じる）
+// クリック処理（モバイルのみ、2秒後に自動で閉じる）
 function handleClick(event) {
     event.preventDefault();
+    
+    // PCでは何もしない（画面幅が768px以上の場合）
+    if (window.innerWidth >= 768) return;
     
     // 既にクリックで表示中なら何もしない
     if (isClicked) return;
@@ -65,7 +68,7 @@ function handleClick(event) {
     icon.classList.add('show');
     isClicked = true;
     
-    // 3秒後に自動で閉じる
+    // 2秒後に自動で閉じる
     messageTimer = setTimeout(() => {
         const iconToHide = document.querySelector('.wait-icon');
         if (iconToHide) {
@@ -73,5 +76,5 @@ function handleClick(event) {
             iconToHide.classList.add('hide');
         }
         isClicked = false;
-    }, 3000);
+    }, 2000);
 }

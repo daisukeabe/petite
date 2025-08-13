@@ -1200,9 +1200,9 @@ a.cast-member:hover .cast-image {
     }
     
     .wait-icon {
-        top: -15%;
-        left: -8%;
-        width: 115px;
+        top: -30%;
+        left: -13%;
+        width: 120px;
         transform: rotate(-90deg) scale(0.5);
     }
     
