@@ -632,11 +632,23 @@ a.cast-member:hover .cast-image {
     font-size: 18px;
 }
 
-.drink-menu-section {
+.price-info.drink-menu-section {
     position: relative;
     overflow: hidden;
     border: none !important;
     box-shadow: none !important;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 50px 60px;
+    margin-bottom: 30px;
+}
+
+.price-info.drink-menu-section h3 {
+    color: #FF6588;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .drink-menu-section > p {
@@ -660,6 +672,7 @@ a.cast-member:hover .cast-image {
     font-weight: bold;
     line-height: 1.6;
     font-size: 18px;
+    text-align: left;
 }
 
 .price-value {
@@ -673,6 +686,8 @@ a.cast-member:hover .cast-image {
 .menu-list p {
     border-bottom: none !important;
     padding-bottom: 0 !important;
+    margin: 10px 0;
+    line-height: 1.6;
 }
 
 .drink-menu-top-bg {
@@ -1039,7 +1054,7 @@ a.cast-member:hover .cast-image {
     }
     
     .cast-name-large {
-        font-size: 24px;
+        font-size: 28px;
     }
     
     .cast-info-row {
@@ -1347,10 +1362,6 @@ a.cast-member:hover .cast-image {
     text-align: left;
 }
 
-.drink-menu-section {
-    margin-bottom: 30px;
-}
-
 @media (max-width: 480px) {
     .cast-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1363,5 +1374,21 @@ a.cast-member:hover .cast-image {
     
     .main-logo {
         max-width: 300px;
+    }
+    
+    .drink-menu-container {
+        padding: 0;
+    }
+    
+    .access-info h3 {
+        font-size: 28px;
+    }
+    
+    .price-info.drink-menu-section h3 {
+        font-size: 25px;
+    }
+    
+    .price-info.drink-menu-section {
+        padding: 40px 30px;
     }
 }
