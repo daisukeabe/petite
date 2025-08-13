@@ -2,6 +2,16 @@
 let messageTimer;
 let isClicked = false;
 
+// 画像を事前読み込み
+window.addEventListener('DOMContentLoaded', function() {
+    const messageImages = [];
+    for (let i = 1; i <= 5; i++) {
+        const img = new Image();
+        img.src = 'img/message-0' + i + '.svg';
+        messageImages.push(img);
+    }
+});
+
 // マウスオーバーごとにmessage-01〜05をランダムに変更
 function changeMessage() {
     const messageNum = Math.floor(Math.random() * 5) + 1;
