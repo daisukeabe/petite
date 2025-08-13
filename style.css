@@ -780,19 +780,55 @@ a.cast-member:hover .cast-image {
 
 .wait-icon {
     position: absolute;
-    top: -2%;
-    left: -5%;
-    width: 140px;
+    top: -8%;
+    left: -8%;
+    width: 170px;
     height: auto;
-    transform: rotate(-9deg) scale(0);
-    transform-origin: bottom center;
+    transform: rotate(-90deg) scale(0.5);
+    transform-origin: 80% 100%;
     opacity: 0;
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s ease;
 }
 
 .wait-icon.show {
-    transform: rotate(-9deg) scale(1);
+    animation: waitBounce 0.4s ease-out forwards;
     opacity: 1;
+}
+
+.wait-icon.hide {
+    animation: waitHide 0.2s ease-in forwards;
+}
+
+@keyframes waitBounce {
+    0% {
+        transform: rotate(-90deg) scale(0.5);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        transform: rotate(5deg) scale(1.1);
+    }
+    60% {
+        transform: rotate(-15deg) scale(0.95);
+    }
+    80% {
+        transform: rotate(-5deg) scale(1.02);
+    }
+    100% {
+        transform: rotate(-9deg) scale(1);
+    }
+}
+
+@keyframes waitHide {
+    0% {
+        transform: rotate(-9deg) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-90deg) scale(0.5);
+        opacity: 0;
+    }
 }
 
 /* Footer */
@@ -1144,11 +1180,48 @@ a.cast-member:hover .cast-image {
         top: -9%;
         left: -6%;
         width: 100px;
-        transform: rotate(-5deg) scale(0);
+        transform: rotate(-90deg) scale(0.5);
     }
     
     .wait-icon.show {
-        transform: rotate(-5deg) scale(1);
+        animation: waitBounceSP 0.4s ease-out forwards;
+    }
+    
+    .wait-icon.hide {
+        animation: waitHideSP 0.2s ease-in forwards;
+    }
+    
+    @keyframes waitBounceSP {
+        0% {
+            transform: rotate(-90deg) scale(0.5);
+            opacity: 0;
+        }
+        20% {
+            opacity: 1;
+        }
+        40% {
+            transform: rotate(3deg) scale(1.1);
+        }
+        60% {
+            transform: rotate(-8deg) scale(0.95);
+        }
+        80% {
+            transform: rotate(-3deg) scale(1.02);
+        }
+        100% {
+            transform: rotate(-5deg) scale(1);
+        }
+    }
+    
+    @keyframes waitHideSP {
+        0% {
+            transform: rotate(-5deg) scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: rotate(-90deg) scale(0.5);
+            opacity: 0;
+        }
     }
 }
 
