@@ -787,6 +787,25 @@ a.cast-member:hover .cast-image {
     transform: rotate(-90deg) scale(0.5);
     transform-origin: 80% 100%;
     opacity: 0;
+    pointer-events: none;
+}
+
+/* ぴすぴすコンテナ */
+.pisupisu-container {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pisupisu-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.pisupisu-image {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
 }
 
 .wait-icon.show {
@@ -1176,6 +1195,10 @@ a.cast-member:hover .cast-image {
         font-size: 16px;
     }
     
+    .pisupisu-image {
+        width: 300px;
+    }
+    
     .wait-icon {
         top: -15%;
         left: -8%;
@@ -1223,6 +1246,109 @@ a.cast-member:hover .cast-image {
             opacity: 0;
         }
     }
+}
+
+/* 会社概要ページ */
+.company-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.company-title {
+    font-size: 48px;
+    color: #FF69B4;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.company-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.company-table {
+    width: 100%;
+    font-size: 18px;
+    color: #79695B;
+    line-height: 2;
+    border-collapse: collapse;
+}
+
+.company-table td {
+    padding: 15px;
+    border-bottom: 1px solid #FFB6C1;
+    text-align: left;
+}
+
+.company-table td:first-child {
+    font-weight: bold;
+    width: 30%;
+}
+
+.company-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* フッターリンク */
+.footer-company-link {
+    color: #79695B;
+    text-decoration: none;
+}
+
+/* ニュースリンク */
+.news-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 地図のiframe */
+.map-iframe {
+    border: 0;
+    border-radius: 10px;
+}
+
+/* アクセスセクションの地図 */
+.access-map {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.access-title-center {
+    text-align: center;
+}
+
+/* SVGフィルター用 */
+.svg-filter {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* ドリンクメニュー */
+.drink-menu-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.drink-menu-title {
+    margin-top: 40px;
+}
+
+.drink-menu-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.drink-menu-column {
+    width: 48%;
+    text-align: left;
+}
+
+.drink-menu-section {
+    margin-bottom: 30px;
 }
 
 @media (max-width: 480px) {

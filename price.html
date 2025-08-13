@@ -78,14 +78,14 @@
         <img src="img/price-title.png" alt="りょうきん" class="section-title">
         <img src="img/system-pc.webp" alt="おたのしみ料金システム" class="system-image system-pc">
         <img src="img/system-sp.webp" alt="おたのしみ料金システム" class="system-image system-sp">
-        <img src="img/drink-menu-title.png" alt="ドリンクメニュー" class="section-title" style="margin-top: 40px;">
+        <img src="img/drink-menu-title.png" alt="ドリンクメニュー" class="section-title drink-menu-title">
         
-        <div style="max-width: 900px; margin: 40px auto; padding: 0 20px;">
-            <div class="access-info price-info drink-menu-section" style="margin-bottom: 30px;">
+        <div class="drink-menu-container">
+            <div class="access-info price-info drink-menu-section">
                 <div class="drink-menu-top-bg"></div>
                 <h3>飲み放題アルコール</h3>
-                <div class="menu-list" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-                    <div style="width: 48%; text-align: left;">
+                <div class="menu-list drink-menu-list">
+                    <div class="drink-menu-column">
                         <p>• ビール</p>
                         <p>• サワー</p>
                         <p>• 焼酎</p>
@@ -96,7 +96,7 @@
                         <p>• ジン</p>
                         <p>• ウォッカ</p>
                     </div>
-                    <div style="width: 48%; text-align: left;">
+                    <div class="drink-menu-column">
                         <p>• ラム</p>
                         <p>• ディタ</p>
                         <p>• マリブ</p>
@@ -110,18 +110,18 @@
                 <div class="drink-menu-bottom-bg"></div>
             </div>
             
-            <div class="access-info price-info drink-menu-section" style="margin-bottom: 30px;">
+            <div class="access-info price-info drink-menu-section">
                 <div class="drink-menu-top-bg"></div>
                 <h3>飲み放題ソフトドリンク</h3>
-                <div class="menu-list" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-                    <div style="width: 48%; text-align: left;">
+                <div class="menu-list drink-menu-list">
+                    <div class="drink-menu-column">
                         <p>• 緑茶</p>
                         <p>• ウーロン茶</p>
                         <p>• ジャスミン茶</p>
                         <p>• 紅茶</p>
                         <p>• オレンジジュース</p>
                     </div>
-                    <div style="width: 48%; text-align: left;">
+                    <div class="drink-menu-column">
                         <p>• グレープフルーツジュース</p>
                         <p>• トマトジュース</p>
                         <p>• クランベリージュース</p>
@@ -132,7 +132,7 @@
                 <div class="drink-menu-bottom-bg"></div>
             </div>
             
-            <div class="access-info price-info drink-menu-section" style="margin-bottom: 30px;">
+            <div class="access-info price-info drink-menu-section">
                 <div class="drink-menu-top-bg"></div>
                 <h3>シャンパン</h3>
                 <div class="price-item">
@@ -166,7 +166,7 @@
                 <div class="drink-menu-bottom-bg"></div>
             </div>
             
-            <div class="access-info price-info drink-menu-section" style="margin-bottom: 30px;">
+            <div class="access-info price-info drink-menu-section">
                 <div class="drink-menu-top-bg"></div>
                 <h3>ノンアルコール</h3>
                 <div class="price-item">
@@ -211,74 +211,16 @@
                 <div class="drink-menu-bottom-bg"></div>
             </div>
             
-            <div style="text-align: center; margin-top: 30px;">
-                <div style="position: relative; display: inline-block;">
-                    <img src="img/pisupisu.webp" alt="ぴすぴす" style="max-width: 100%; width: 600px; height: auto;" 
+            <div class="pisupisu-container">
+                <div class="pisupisu-wrapper">
+                    <img src="img/pisupisu.webp" alt="ぴすぴす" class="pisupisu-image" 
                          onmouseover="handleMouseOver()" 
                          onmouseout="handleMouseOut()"
                          onclick="handleClick(event)">
-                    <img src="img/message-01.svg" alt="メッセージ" class="wait-icon" id="random-message" style="pointer-events: none;">
+                    <img src="img/message-01.svg" alt="メッセージ" class="wait-icon" id="random-message">
                 </div>
-                <script>
-                    let messageTimer;
-                    let isClicked = false;
-                    
-                    // マウスオーバーごとにmessage-01〜05をランダムに変更
-                    function changeMessage() {
-                        const messageNum = Math.floor(Math.random() * 5) + 1;
-                        const messageImg = document.getElementById('random-message');
-                        messageImg.src = 'img/message-0' + messageNum + '.svg';
-                    }
-                    
-                    // マウスオーバー処理
-                    function handleMouseOver() {
-                        if (isClicked) return; // クリック中は無視
-                        const icon = document.querySelector('.wait-icon');
-                        changeMessage();
-                        icon.classList.add('show');
-                        icon.classList.remove('hide');
-                    }
-                    
-                    // マウスアウト処理
-                    function handleMouseOut() {
-                        if (isClicked) return; // クリック中は無視
-                        const icon = document.querySelector('.wait-icon');
-                        icon.classList.remove('show');
-                        icon.classList.add('hide');
-                    }
-                    
-                    // クリック処理（3秒後に自動で閉じる）
-                    function handleClick(event) {
-                        event.preventDefault();
-                        
-                        // 既にクリックで表示中なら何もしない
-                        if (isClicked) return;
-                        
-                        const icon = document.querySelector('.wait-icon');
-                        
-                        // 既に表示されている（マウスオーバーで）場合はメッセージを変更しない
-                        if (!icon.classList.contains('show')) {
-                            changeMessage();
-                        }
-                        
-                        // タイマーをリセット
-                        clearTimeout(messageTimer);
-                        
-                        // 表示
-                        icon.classList.remove('hide');
-                        icon.classList.add('show');
-                        isClicked = true;
-                        
-                        // 3秒後に自動で閉じる
-                        messageTimer = setTimeout(() => {
-                            const iconToHide = document.querySelector('.wait-icon');
-                            iconToHide.classList.remove('show');
-                            iconToHide.classList.add('hide');
-                            isClicked = false;
-                        }, 3000);
-                    }
-                </script>
             </div>
+            <script src="pisupisu.js"></script>
         </div>
     </section>
 
@@ -288,7 +230,7 @@
             <a href="https://x.com/wni_jp" target="_blank"><img src="img/sns-x.svg" alt="X"></a>
             <a href="https://www.instagram.com/hypebeastjp/" target="_blank"><img src="img/sns-insta.svg" alt="Instagram"></a>
         </div>
-        <p><a href="company.html" style="color: #79695B; text-decoration: none;">会社概要</a></p>
+        <p><a href="company.html" class="footer-company-link">会社概要</a></p>
         <p>2025 XXXXX Co., Ltd. All Rights Reserved.</p>
     </footer></body>
 </html>
