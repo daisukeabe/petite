@@ -1401,3 +1401,15 @@ a.cast-member:hover .cast-image {
         padding: 40px 30px;
     }
 }
+
+/* お散歩コースのノート */
+.drink-menu-note {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #79695B;
+}
